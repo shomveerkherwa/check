@@ -18,7 +18,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Build Spring Boot JAR
-      run:
+      run: |
         chmod +x ./mvnw
         ./mvnw clean package
       working-directory: deploy-check
