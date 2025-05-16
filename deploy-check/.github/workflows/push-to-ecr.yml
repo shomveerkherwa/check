@@ -1,8 +1,7 @@
 name: Build and Push to AWS ECR SK
 
 on:
-  push:
-    branches: [ main ]  # or any branch you want
+  workflow_dispatch:
 
 jobs:
   build-and-push:
