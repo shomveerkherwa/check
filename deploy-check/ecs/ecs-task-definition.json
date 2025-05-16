@@ -1,9 +1,9 @@
 {
   "family": "deploy-check-task",
   "requiresCompatibilities": ["FARGATE"],
-  "networkMode": "awsvpc",  // Required for Fargate tasks
-  "cpu": "256",  // Task-level CPU
-  "memory": "512",  // Task-level memory
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
   "containerDefinitions": [
     {
       "name": "deploy-check-container",
