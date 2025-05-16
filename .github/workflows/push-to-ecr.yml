@@ -19,6 +19,7 @@ jobs:
 
     - name: Build Spring Boot JAR
       run: ./mvnw clean package
+      working-directory: deploy-check
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v3
