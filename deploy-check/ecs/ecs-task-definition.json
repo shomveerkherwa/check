@@ -1,0 +1,17 @@
+{
+  "family": "deploy-check-task",
+  "containerDefinitions": [
+    {
+      "name": "deploy-check-container",
+      "image": "084375547400.dkr.ecr.ap-south-1.amazonaws.com/dep-repo:latest",
+      "memory": 512,
+      "cpu": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8080
+        }
+      ]
+    }
+  ]
+}
